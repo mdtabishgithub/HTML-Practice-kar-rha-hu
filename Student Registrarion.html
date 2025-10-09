@@ -23,9 +23,14 @@
       <a href="#About">About</a>
       <a href="#Contact">Contact</a>
    </nav>
+  
+      <marquee behavior="scroll" direction="Left"> Students Must fill their information correct &nbsp;&nbsp;&nbsp;&
+         <!-- abe yarr ye space dene ka koi toh solution hoga , aise manually space dena non-sense lag raha -->
+         nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User cannot change their data after finalization of form&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The last date of form is 15/10/2025</marquee>
+      <marquee behavior="" direction="Left"> </marquee>
 </header>   
          <h2>Registration Form</h2>
-      <form action="action.php">
+   <form action="action.php" target="_blank">
          <label for="Name Input"> <Caption>Name</Caption> <br>
             <input type="text" placeholder="Enter Your Name" id="101">
          </label>
@@ -38,11 +43,94 @@
             <input type="number" placeholder="Enter Your Phone Number" id="103">
          </label>
 <br>
-         <label for="Gender Input"> <Caption>Gender</Caption> <br>
-              <input type="radio" Name="Male" Value="Male"> Male 
+         <label for="Gender Input" id="104" > <Caption>Gender</Caption> <br>
+              <input type="radio" Name="Male" Value="Male"> Male
               <input type="radio" Name="Male" Value="Male"> Female
          </label>
-<br>
-      </form>
+<br> <hr>
+         <label for="Course Selection">
+            <Caption> Choose your Course</Caption>
+            <select name="Course" id="105"> 
+               <option value="B.Tech">B.Tech</option>
+               <option value="M.Tech">M.Tech</option>
+               <option value="BBA">BBA</option>
+               <option value="BCA">BCA</option>
+               <option value="MBA">MBA</option>
+            </select>
+         </label>
+<hr>
+         <label for="Checkboxes"> <Caption> <b>Skills</b></Caption>
+            <input type="checkbox" name="HTML5" id="106"> HTML5
+            <input type="checkbox" name="CSS" id="107"> CSS
+            <input type="checkbox" name="JavaScript" id="108"> JavaScript
+            <input type="checkbox" name="ReactJs" id="107"> ReactJs
+            <input type="checkbox" name="Figma" id="107"> Figma
+            <input type="checkbox" name="Git/Github" id="107"> Git/Github  
+         </label>
+<br> <hr> <br>
+         <center>
+         <label for="Profile Picture">
+            Upload your profile picture &nbsp;&nbsp;&nbsp; 
+            <input type="file" name="Profilepic" id="108" accept="image"  > 
+         </label>
+<br> <br> <br>      
+         <input type="submit" value="Submit"> Submit karo
+         </center>
+    </form>
+   
+    <table border="1">
+         <caption>List of Registered Students</caption>
+         <tr> 
+            <!-- Ye wala first row ka content ho gya  -->
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Skills</th>
+         </tr>
+
+         <tr>
+            <!-- Ye wala second row ka content ho gya  -->
+            <td>Tabish</td>
+            <td>tabish@example.com</td>
+            <td>Computer Science</td>
+            <td>Coding, Designing</td>
+         </tr>
+
+         <tr>
+            <!-- Ye wala third row ka content ho gya  -->
+            <td>Ali</td>
+            <td>ali@example.com</td>
+            <td>Mechanical</td>
+            <td>Content Writing, Gaming</td>
+         </tr>
+
+         <tr>
+            <!-- Ye wala fourth row ka content ho gya  -->
+            <td>Rizwan</td>
+            <td>rizwan@example.com</td>
+            <td>Electrical</td>
+            <td>Designing</td>
+         </tr>
+      </table>
+   
+      <article>
+            <h3>About the Student</h3> <font color="Cyan"> 
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. At molestias, perspiciatis id autem magni officia, impedit, dolor nisi non ullam accusamus minus voluptatibus pariatur eum.
+         </p></font>
+      </article>
+
+      <aside> 
+         <ul><b> <u>Hobbies & intrests</u> </b>
+            <li>Coding</li>
+            <li>Designing</li>
+            <li>Gaming</li>
+         </ul>
+      </aside>
+<hr>
+      <footer>
+         <a href="https://www.instagram.com/normie_tabish/" target="_blank"> Instagram</a>
+         <a href="https://www.youtube.com/@Tab-Verse" target="_blank"> Youtube</a>
+         <a href="https://x.com/Tabishoriginal" target="_blank"> twitter</a>
+      </footer>
  </body>
  </html>
